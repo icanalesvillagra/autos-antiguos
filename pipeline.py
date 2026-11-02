@@ -3,12 +3,14 @@ from extract.wikidata import extraer
 from transform.limpiar import transformar
 from load.cargar import cargar
 from quality.validar import validar
+from analisis.graficos import graficar
 
 PASOS = [
     ("Extraer", extraer),
     ("Transformar", transformar),
     ("Validar", validar),
     ("Cargar", cargar),
+    ("Graficar", graficar),
 ]
 
 def main():
